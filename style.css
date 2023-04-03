@@ -204,7 +204,10 @@ body {
 
 .footer-link-item:hover {
     border-bottom: 1px solid darkorange;
+}
 
+#contact-us-btn:hover {
+    color: var(--dark-teal) !important;
 }
 
 
