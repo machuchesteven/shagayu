@@ -1,0 +1,162 @@
+create a user called shagayu_datauser with password Shagayu@12345
+as follows
+
+sudo mysql -u root 
+
+create database shagayudb
+
+
+
+CREATE USER 'shagayu_datauser'@'localhost' IDENTIFIED BY 'Shagayu@12345';
+
+GRANT ALL PRIVILEGES ON * . * TO 'shagayu_datauser'@'localhost';
+
+FLUSH PRIVILEGES;
+
+echo "database created successfully and connection can be made";
+
+database creation queryies
+
+
+WE WILL HAVE THE FOLLOWING TABLES
+    -staff
+    -department
+    -equipment
+    -work
+    -contact
+    -management
+
+// creating the staff table
+CREATE TABLE `staff` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(50),
+	`qualification` VARCHAR(30),
+	`position` VARCHAR(30),
+	`experience` INT,
+	`at_company` INT,
+	`empl_status` INT,
+	PRIMARY KEY (`id`)
+);
+
+
+// create the department table
+CREATE TABLE `department` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(20),
+	`independent` BOOLEAN,
+	PRIMARY KEY (`id`)
+);
+
+
+// equipments table 
+CREATE TABLE `equipment` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(50),
+	`description` TEXT,
+	`qty` INT,
+    `dept` INT REFERENCES `department(id)`,
+	PRIMARY KEY (`id`)
+);
+
+
+// works - named clients - table
+CREATE TABLE `clients` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(50),
+	`job` VARCHAR(50),
+	`description` TEXT,
+	`dept` INT REFERENCES `department(id)`,
+	PRIMARY KEY (`id`)
+);
+
+// contacts table goes here below
+CREATE TABLE `contacts` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+    `staff_id` INT REFERENCES `staff(id)`,
+	`phone` VARCHAR(15),
+    `email` VARCHAR(50) NOT NULL,
+    `email_extra` VARCHAR(50),
+	PRIMARY KEY (`id`)
+
+);
+
+//users table creation
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+
+// make some columns unique to avoid collisions
+ALTER TABLE equipment
+ADD CONSTRAINT UQ_equipement_title UNIQUE(title);
+
+//staff names unique
+ALTER TABLE staff
+ADD CONSTRAINT UQ_staff_name UNIQUE(name);
+
+
+// department names unique 
+ALTER TABLE department
+ADD CONSTRAINT UQ_department_name UNIQUE(name);
+
+
+CREATE TABLE `subscription` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`subscriber` VARCHAR(50) UNIQUE,
+	PRIMARY KEY (`id`)
+);
+
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Get department from the form
+    if (isset($_POST['department'])) {
+        $department = $_POST['department'];
+    }
+
+    // Check if file has been uploaded
+    if (isset($_FILES['fileToUpload']) && $_FILES['fileToUpload']['error'] === UPLOAD_ERR_OK) {
+
+        // Get the file information
+        $file_name = $_FILES['fileToUpload']['name'];
+        $file_size = $_FILES['fileToUpload']['size'];
+        $file_tmp = $_FILES['fileToUpload']['tmp_name'];
+        $file_type = $_FILES['fileToUpload']['type'];
+        $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+
+        // Check if the file type is allowed
+        $allowed_extensions = array("jpg", "jpeg", "png", "gif");
+        if (in_array($file_ext, $allowed_extensions)) {
+
+            // Generate a unique file name
+            $file_name = uniqid() . "." . $file_ext;
+
+            // Upload the file to the server
+            $upload_path = "uploads/" . $file_name;
+            move_uploaded_file($file_tmp, $upload_path);
+
+            // Insert the image data into the database
+            $sql = "INSERT INTO images (department, file_name, file_size, file_type, file_path) VALUES ('$department', '$file_name', '$file_size', '$file_type', '$upload_path')";
+
+            if (mysqli_query($conn, $sql)) {
+                echo "Image uploaded successfully.";
+            } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+
+        } else {
+            echo "Error: Only JPG, JPEG, PNG, and GIF files are allowed.";
+        }
+
+    } else {
+        echo "Error: No file uploaded.";
+    }
+
+}
+
+// Close database connection
+mysqli_close($conn);
