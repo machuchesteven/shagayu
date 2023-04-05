@@ -74,7 +74,7 @@ if (!empty($_SESSION['message'])) {
 </div>
 
 <!-- company profile -->
-<div class="container-fluid" data-aos="zoom-in" data-aos-duration="600">
+<div class="container-fluid" data-aos="zoom-in" data-aos-duration="600" id="our-values">
     <div class="container ">
         <h2 class="my-md-5 text-center primary-text">Our Company</h2>
 
@@ -93,7 +93,7 @@ if (!empty($_SESSION['message'])) {
                 <img src="./resources/working area terex.jpg" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-8">
-                <h3 class="primary-text">Scope of Services</h3>
+                <h3 class="primary-text mt-2 mt-md-5">Scope of Services</h3>
                 <div class="line-break-left mt-2 mt-md-3 mb-md-3"></div>
                 <p class="primary-text">
                     SCL’s draws out experienced team to work in Civil & Electrical contracting business for commercial, and industrial clients ranging from large companies to small and medium enterprises.
@@ -311,7 +311,7 @@ if (!empty($_SESSION['message'])) {
 
 
 <!-- values we deliver to customers -->
-<div class="values container-fluid ">
+<div class="values container-fluid " id="our-tools our-team">
     <div class="container pt-5">
         <div class="mb-2 mb-md-5" data-aos="zoom-in-up">
             <h1 class="text-center color-main">Reasons To Work With Us</h1>
@@ -351,7 +351,7 @@ if (!empty($_SESSION['message'])) {
                 </div>
             </div>
         </div>
-        <div class="row my-3 my-md-5" data-aos="flip-up">
+        <div class="row my-3 my-md-5" data-aos="fade-up">
             <div class="col-md-6 py-md-5">
                 <h3 class="primary-text my-md-2 mb-2">
                     Advanced Equipments Tools

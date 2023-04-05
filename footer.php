@@ -16,15 +16,13 @@
                     </h4>
                     <div>
                         <i class="text-light mb-2">Along New Bagamoyo Road,</i>
-                        Physical Address
-                        Along New Bagamoyo Road,
-                        Plot No 2040, Block H, GdB Roman Catholic House
-                        Tegeta- Kinondoni, Dar es Salaam
-
+                        <address class="text-light mb-2">New Bagamoyo Road,</address>
+                        <p class="text-light mb-2">Plot No 2040, Block H, GdB Roman Catholic House</p>
+                        <i class="text-light mb-2"><b>Tegeta- Kinondoni, Dar es Salaam</b></i>
                     </div>
                 </div>
                 <!-- the second column showing the company links -->
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3 col-xs-5">
                     <h4 class="mb-md-2">Major Links</h4>
                     <div class="footer-links-list">
 
@@ -67,12 +65,19 @@
                 </div>
                 <!-- disclaimer and others -->
                 <div class="col-md-3 col-xs-6">
-                    <h3 class="text-light my-2">Contact Details</h3>
+                    <h3 class="text-light my-2">Head Office</h3>
                     <div class="contact-detail-container">
-                        <p>
-                            <i class="fa fa-phone text-light justify-center mx-2" aria-hidden="true"></i>
-
-                        </p>
+                        <ul>
+                            <li>P.o.Box 68385</li>
+                            <li>Phone: 0715669055</li>
+                            <li>
+                                <small><b>Physical Address</b><br>
+                                    HOUSE NO: BNJ/DOVY/428<br>
+                                    NDEGE BEACH ROAD <br>
+                                    KINONDONI
+                                </small>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -108,7 +113,7 @@
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
-    let navigationBar = document.getElementById('navigation-bar')
+    let navigationBar = document.getElementById('heading-bar')
     let toTopBtn = document.getElementById('back-to-top-btn')
     window.onscroll = function() {
         scrollFunction()

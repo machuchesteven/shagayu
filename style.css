@@ -201,6 +201,11 @@ body {
     color: darkorange !important;
 }
 
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
 .footer-link-item {
     text-decoration: none !important;
     cursor: pointer !important;
@@ -214,6 +219,9 @@ body {
     color: var(--dark-teal) !important;
 }
 
+#heading-bar {
+    transition: all 0.5s ease-in !important;
+}
 
 @keyframes border-animate {}
 
