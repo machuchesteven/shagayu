@@ -1,12 +1,11 @@
-<?php
-
-include_once './models/connect_db.php';
-
-$conn = openCon();
-
-echo "<h1>Connecting to database</h1>";
-
-
-
+<?php require_once('./models/connect_db.php'); ?>
+<?php require_once 'header.php';
 ?>
 
+<div class="container-fluid">
+    <h1>Construction Department</h1>
+</div>
+
+
+
+<?php require_once 'footer.php' ?>
