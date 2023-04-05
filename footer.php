@@ -124,10 +124,12 @@
     }
 
     function stickHeader() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            navigationBar.classList.remove('d-none')
             navigationBar.classList.add("fixed-top")
         } else {
-            navigationBar.classList.remove('fixed-top')
+            navigationBar.classList.remove("fixed-top")
+            navigationBar.classList.add('d-none')
         }
     }
 
