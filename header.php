@@ -16,27 +16,40 @@
 <body>
 
     <div>
+        <nav>
+
+        </nav>
         <!-- navigation bar, important to be included in the base file with footer -->
 
-        <div class="navbar white nav-dark bg-shagayu ">
-            <div class="container">
-                <a href="index.php" class="navbar-brand text-light">
-                    <b>SHAGAYU Co. Ltd</b>
-                </a>
-                <ul class="nav justify-md-content-end w-sm-100">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="electrical.php">Electrical</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="construction.php">Construction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="team.php">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light btn btn-outline-light" id="contact-us-btn" href="contacts.php">Contact Us</a>
-                    </li>
-                </ul>
+        <div class="navbar nav-light navbar-expand-md " id="navigation-bar">
+            <div class="container ">
+                <div class="m-2 border border-secondary rounded py-2 w-100 bg-light">
+
+                    <div class="">
+                        <div class="">
+                            <ul class="collapse navbar-collapse nav justify-content-center" id="navbarTogglerDemo01">
+                                <li class="nav-item">
+                                    <a class="nav-link primary-text active-link" href="index.php">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link primary-text" href="electrical.php">Electrical</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link primary-text" href="construction.php">Construction</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link primary-text" href="team.php">Our Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link primary-text btn btn-outline-secondary" href="contacts.php">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -16,6 +16,10 @@
                     </h4>
                     <div>
                         <i class="text-light mb-2">Along New Bagamoyo Road,</i>
+                        Physical Address
+                        Along New Bagamoyo Road,
+                        Plot No 2040, Block H, GdB Roman Catholic House
+                        Tegeta- Kinondoni, Dar es Salaam
 
                     </div>
                 </div>
@@ -63,11 +67,12 @@
                 </div>
                 <!-- disclaimer and others -->
                 <div class="col-md-3 col-xs-6">
-                    <h4>Be Updated From Us</h4>
-                    <p class="mb-md-3 mb-2">Be the first to receive updates on our services and tools</p>
-                    <div class="subsrcibe-form input-group mb-3">
-                        <input type="text" class="form-control" placeholder="email" name="email" />
-                        <span class="bg-light text-dark">Join</span>
+                    <h3 class="text-light my-2">Contact Details</h3>
+                    <div class="contact-detail-container">
+                        <p>
+                            <i class="fa fa-phone text-light justify-center mx-2" aria-hidden="true"></i>
+
+                        </p>
                     </div>
                 </div>
             </div>
@@ -103,17 +108,26 @@
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
-
+    let navigationBar = document.getElementById('navigation-bar')
     let toTopBtn = document.getElementById('back-to-top-btn')
     window.onscroll = function() {
         scrollFunction()
+        stickHeader()
     }
 
     function scrollFunction() {
-        if (document.body.scrollTop > document.body > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             toTopBtn.style.display = 'block';
         } else {
             toTopBtn.style.display = 'none';
+        }
+    }
+
+    function stickHeader() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            navigationBar.classList.add("fixed-top")
+        } else {
+            navigationBar.classList.remove('fixed-top')
         }
     }
 

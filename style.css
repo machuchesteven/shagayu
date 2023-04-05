@@ -197,6 +197,10 @@ body {
     ;
 }
 
+.active-link {
+    color: darkorange !important;
+}
+
 .footer-link-item {
     text-decoration: none !important;
     cursor: pointer !important;

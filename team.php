@@ -55,7 +55,5 @@
             <div class="col-md-4 col-xl-3"></div>
         </div>
     </div>
-
-
 </div>
 <?php include_once "footer.php"; ?>
