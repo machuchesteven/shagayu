@@ -172,6 +172,7 @@ body {
 .highlighted {
     font-weight: bold;
     color: darkorange;
+    text-transform: capitalize !important;
 }
 
 .service-list-item {
@@ -222,6 +223,11 @@ a {
 #heading-bar {
     transition: all 0.5s ease-in !important;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 
 @keyframes border-animate {}
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="50">
     <link rel="shortcut icon" href="./resources/logo.png" type="image/x-icon">
     <title>Shagayu Construction Limited</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -36,7 +37,7 @@
                                         <a class="nav-link primary-text active-link" href="index.php">Home</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link  primary-text" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="about.php">About Us <i class="fa fa-arrow-down primary-text" aria-hidden="true"></i></a>
+                                        <a class="nav-link  primary-text dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="about.php">About Us </a>
                                         <ul class="dropdown-menu">
                                             <li>
                                                 <a href="#our-values" class="dropdown-item primary-text">Our Values </a>
@@ -49,11 +50,20 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link primary-text" href="electrical.php">Electrical</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link primary-text" href="construction.php">Construction</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link  primary-text dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="electrical.php" class="dropdown-item primary-text">Electrical</a>
+                                            </li>
+                                            <li>
+                                                <a href="building.php" class="dropdown-item primary-text">Building</a>
+                                            </li>
+                                            <li>
+                                                <a href="construction.php" class="dropdown-item primary-text">Electrical</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link primary-text" href="team.php">Our Team</a>
