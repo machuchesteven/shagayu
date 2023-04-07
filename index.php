@@ -68,7 +68,7 @@ if (!empty($_SESSION['message'])) {
             <a class="nav-link text-light" href="contacts.php">Contact Us</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-light" href="worked_with.php">Partners and Customers</a>
+            <a class="nav-link text-light" href="#">Partners and Customers</a>
         </li>
     </ul>
 </div>
