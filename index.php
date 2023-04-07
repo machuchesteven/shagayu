@@ -203,7 +203,9 @@ if (!empty($_SESSION['message'])) {
                             </li>
                         </ul>
                         <div class="text-center">
-                            <button type="button" class="btn bg-shagayu text-light btn-block">See Clear</button>
+                            <a href="construction.php">
+                                <button type="button" class="btn bg-shagayu text-light btn-block">See Clear</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -250,7 +252,9 @@ if (!empty($_SESSION['message'])) {
                             </li>
                         </ul>
                         <div class="text-center">
-                            <button type="button" class="btn bg-shagayu text-light btn-block">See Clear</button>
+                            <a href="building.php">
+                                <button type="button" class="btn bg-shagayu text-light btn-block">See Clear</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -299,7 +303,9 @@ if (!empty($_SESSION['message'])) {
                             </li>
                         </ul>
                         <div class="text-center">
-                            <button type="button" class="btn bg-shagayu text-light btn-block">See Clear</button>
+                            <a href="electrical.php">
+                                <button type="button" class="btn bg-shagayu text-light btn-block">See Clear</button>
+                            </a>
                         </div>
                     </div>
                 </div>

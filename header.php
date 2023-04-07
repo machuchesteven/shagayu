@@ -43,10 +43,10 @@
                                                 <a href="#our-values" class="dropdown-item primary-text">Our Values </a>
                                             </li>
                                             <li>
-                                                <a href="#our-tools" class="dropdown-item  primary-text">Our Values </a>
+                                                <a href="#our-mission" class="dropdown-item  primary-text">Our Mission </a>
                                             </li>
                                             <li>
-                                                <a href="#our-team" class="dropdown-item  primary-text">Our Values </a>
+                                                <a href="#our-tools" class="dropdown-item  primary-text">Our Tools </a>
                                             </li>
                                         </ul>
                                     </li>
@@ -55,13 +55,13 @@
 
                                         <ul class="dropdown-menu">
                                             <li>
+                                                <a href="construction.php" class="dropdown-item primary-text">Construction</a>
+                                            </li>
+                                            <li>
                                                 <a href="electrical.php" class="dropdown-item primary-text">Electrical</a>
                                             </li>
                                             <li>
                                                 <a href="building.php" class="dropdown-item primary-text">Building</a>
-                                            </li>
-                                            <li>
-                                                <a href="construction.php" class="dropdown-item primary-text">Electrical</a>
                                             </li>
                                         </ul>
                                     </li>
