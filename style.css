@@ -33,6 +33,11 @@ body {
     font-weight: bold !important;
 }
 
+.electrical-bg {
+    background-image: url('./resources/grid kibaha transfomer.jpg');
+
+}
+
 .primary-btn {
     background-color: var(--dark-teal) !important;
     color: #dce0e7 !important;

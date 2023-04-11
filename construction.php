@@ -2,12 +2,18 @@
 <?php require_once 'header.php';
 ?>
 
+<div class="">
+    <div class="hero-section">
+        <div class="container">
+            <h1 class=" primary-text text-center">Welcome To Shagayu Construction Department</h1>
+            <p class=" primary-text text-center py-md-5 py-2">
+                We been approved to conduct high-quality building works for large-scale projects and industrial clients. Their expertise in the field has earned them a reputation for excellence, and their team of skilled professionals is committed to delivering outstanding results. With a focus on safety, efficiency, and innovation, they have the experience and capabilities to tackle even the most complex construction challenges. Trustworthy, reliable, and dedicated, this company is the ideal partner for any major building project in Tanzania.
+            </p>
+        </div>
+    </div>
+</div>
 <div class="container-fluid">
-    <div class="container bg-light">
-        <h1 class="py-2 primary-text text-center">Welcome To Shagayu Construction Department</h1>
-        <p class="primary-text text-center pb-md-5 pb-2">
-            We been approved to conduct high-quality building works for large-scale projects and industrial clients. Their expertise in the field has earned them a reputation for excellence, and their team of skilled professionals is committed to delivering outstanding results. With a focus on safety, efficiency, and innovation, they have the experience and capabilities to tackle even the most complex construction challenges. Trustworthy, reliable, and dedicated, this company is the ideal partner for any major building project in Tanzania.
-        </p>
+    <div class="container">
         <div class="row">
             <div class="col-3">
                 <img src="./resources/crb logo.png" alt="Registrars Logo" class="img-fluid">
