@@ -4,8 +4,8 @@
 <div class="container-fluid ">
     <div class="hero-section electrical-bg">
         <div class="">
-            <h1 class="primary-text text-center">Welcome To Shagayu Construction LTD, Electrical Department</h1>
-            <p class="hero-paragraph text-center">
+            <h1 class="text-light text-center">Welcome To Shagayu Construction LTD, Electrical Department</h1>
+            <p class="text-ligh hero-paragraph text-center">
                 We are registered to deal with electrical services and verified to work on them
             </p>
         </div>

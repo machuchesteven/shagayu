@@ -35,7 +35,15 @@ body {
 
 .electrical-bg {
     background-image: url('./resources/grid kibaha transfomer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+
+.construction-bg {
+    background-image: url('./resources/working area sand mixer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .primary-btn {
@@ -71,7 +79,7 @@ body {
 }
 
 .hero-section {
-    height: 75vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -13,9 +13,11 @@
                 <h3 class="primary-text">Here is Our Staff with their Properties</h3>
                 <div class="card text-left m-2">
                     <div class="card-body">
-                        <h4 class="card-title primary-text">Technical Name</h4>
+                        <h4 class="card-title primary-text">Peter B. Mghens</h4>
                         <hr />
-                        <p class="card-text primary-text">Is a proffesional <i>Education</i> working as a <b>Position</b> at with over <b>yos</b></p>
+                        <p class="card-text primary-text">Is a proffesional <i>FTC in Electrical Eng. BSc ElectroMechanical Eng.
+                                MSc. Disaster Risk Management (DRM)
+                            </i> working as a <b>Position</b> at with over <b>yos</b></p>
                     </div>
                 </div>
                 <hr />
